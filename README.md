@@ -1,5 +1,7 @@
 # Astro Starter Kit: Minimal
 
+[My Site](https://jazzy-bublanina-2c7998.netlify.app/)
+
 ```
 npm init astro -- --template minimal
 ```
