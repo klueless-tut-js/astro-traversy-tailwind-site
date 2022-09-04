@@ -1,0 +1,16 @@
+---
+export interface Props {
+  image: string,
+  name: string,
+  classExtra?: string
+}
+
+const { image, name, classExtra = '' } = Astro.props as Props;
+const cardClass = `flex-col items-center p-6 space-y-6 rounded-lg bg-veryLightGray md:w-1/3 ${classExtra}`;
+---
+
+<div class={cardClass}>
+  <img class="w-16 -mt-14 rounded-full" src={image} alt={name} />
+  <h5 class="text-lg font-bold">{name}</h5>
+  <slot></slot>
+</div>

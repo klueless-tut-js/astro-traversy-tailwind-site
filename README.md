@@ -2,6 +2,8 @@
 
 [My Site](https://jazzy-bublanina-2c7998.netlify.app/)
 
+[Tailwind Crash Course Traversy](https://www.youtube.com/watch?v=dFgzHOX84xQ)
+
 ```
 npm init astro -- --template minimal
 ```

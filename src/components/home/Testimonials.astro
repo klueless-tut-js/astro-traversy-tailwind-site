@@ -1,0 +1,38 @@
+---
+import Button from '../Button.astro'
+import Testimonial from '../home/Testimonial.astro'
+import avatarNisha from '../../images/avatar-anisha.png'
+import avatarAli from '../../images/avatar-ali.png'
+import avatarRichard from '../../images/avatar-richard.png'
+---
+<section id="testimonials">
+  <div class="max-w-6xl px-5 mx-auto mt-32 text-center">
+    <h2 class="text-4xl font-bold text-center">
+      What's different about Manager?
+    </h2>
+    <div class='flex flex-col mt-24 md:flex-row md:space-x-6 '>
+      <Testimonial name="Anisha Li" image={avatarNisha} classExtra={'flex'}>
+        <p class="text-sm text-darkGrayishBlue">
+          “Manage has supercharged our team’s workflow. 
+          The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”
+        </p>
+      </Testimonial>
+      <Testimonial name="Ali Bravo" image={avatarAli} classExtra={'hidden md:flex'}>
+        <p class="text-sm text-darkGrayishBlue">
+          “We have been able to cancel so many other subscriptions since using Manage.
+          There is no more cross-channel confusion and everyone is much more focused.”
+        </p>
+      </Testimonial>
+      <Testimonial name="Richard Watts" image={avatarRichard} classExtra={'hidden md:flex'}>
+        <p class="text-sm text-darkGrayishBlue">
+          “Manage has supercharged our team’s workflow. The ability to
+          maintain visibility on larger milestones at all times keeps
+          everyone motivated.”
+        </p>
+      </Testimonial>
+    </div>
+    <div class="my-16">
+      <Button href="" label="Get Started" />
+    </div>
+  </div>
+</section>

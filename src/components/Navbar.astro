@@ -1,5 +1,8 @@
 ---
 import logo from '../images/logo.svg';
+import MenuItem from '../components/MenuItem.astro'
+import Button from '../components/Button.astro'
+import Hamburger from '../components/Hamburger.astro'
 ---
 <nav class="relative container mx-auto p-6">
   <div class="flex items-center justify-between">
@@ -7,5 +10,24 @@ import logo from '../images/logo.svg';
     <div class="pt-2">
       <img src={logo} alt="">
     </div>
+    <!-- Menu Items -->
+    <div class="hidden md:flex space-x-6">
+      <MenuItem href="/pricing" label="Pricing" />
+      <MenuItem href="/product" label="Product" />
+      <MenuItem href="/about" label="About Us" />
+      <MenuItem href="/carrers" label="Careers" />
+      <MenuItem href="/community" label="Community" />
+    </div>
+    <Button href="/" label="Get Started" classExtra='hidden md:block' />
+    <Hamburger />
+  </div>
+  <div class="md:hidden">
+    <div id="menu" class="hidden absolute flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+      <MenuItem href="/pricing" label="Pricing" />
+      <MenuItem href="/product" label="Product" />
+      <MenuItem href="/about" label="About Us" />
+      <MenuItem href="/carrers" label="Careers" />
+      <MenuItem href="/community" label="Community" />
+     </div>
   </div>
 </nav>

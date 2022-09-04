@@ -1,0 +1,24 @@
+---
+import Button from '../Button.astro'
+---
+<section id="cta" class="bg-brightRed">
+  <div class="container flex flex-col items-center justify-between px-6 py-24 mx-auto space-y-12 md:py-12 md:flex-row">
+    <h2 class="text-5xl font-bold leading-tight text-center text-white md:text-4xl md:max-w-xl md:text-left">Simplify how your team works today</h2>
+    <Button href="/" label="Get Started" variant={'light'}/>
+  </div>
+</section>
+
+<style>
+  #cta {
+    background-image: url('/src/images/bg-simplify-section-desktop.svg');
+    background-repeat: no-repeat;
+  }
+
+  @media(max-width: 576px) {
+    body {
+      background-image: url('/src/images/bg-simplify-section-mobile.svg');
+      background-position: 50px -50px;
+      background-size: 500px;
+    }
+  }
+</style>
